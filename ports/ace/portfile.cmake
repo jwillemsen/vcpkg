@@ -29,7 +29,7 @@ set(ENV{ACE_ROOT} ${ACE_ROOT})
 set(ACE_SOURCE_PATH ${ACE_ROOT}/ace)
 
 vcpkg_apply_patches(
-    SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src/ACE_wrappers
+    SOURCE_PATH ${SOURCE_PATH}
     PATCHES
         "${CMAKE_CURRENT_LIST_DIR}/arm_prevent_amd64_definition.patch"
 )
