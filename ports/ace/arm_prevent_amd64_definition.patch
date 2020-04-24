@@ -1,10 +1,10 @@
-diff --git a/ACE/ace/config-win32-common.h b/ACE/ace/config-win32-common.h
+diff --git a/ace/config-win32-common.h b/ace/config-win32-common.h
 index 30f06adb140..46a573ab44a 100644
---- a/ACE/ace/config-win32-common.h
-+++ b/ACE/ace/config-win32-common.h
+--- a/ace/config-win32-common.h
++++ b/ace/config-win32-common.h
 @@ -40,8 +40,8 @@
  #  define ACE_WIN64
- 
+
  // MPC template adds _AMD64_ but user projects not generated using MPC
 -// may want to use _AMD64_ as well. Ensure it's there in all cases.
 -#  ifndef _AMD64_
@@ -12,4 +12,4 @@ index 30f06adb140..46a573ab44a 100644
 +#  if !defined (_AMD64_) && !defined(_ARM_)
  #    define _AMD64_
  #  endif
- 
+
